@@ -1,0 +1,47 @@
+{
+  "skills": {
+    "python-dev-guidelines": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high",
+      "promptTriggers": {
+        "keywords": [
+          "python",
+          "fastapi",
+          "flask",
+          "pytest",
+          "pydantic",
+          "api",
+          "endpoint",
+          "route",
+          "test",
+          "model",
+          "validation"
+        ],
+        "intentPatterns": [
+          "create.*api",
+          "write.*test",
+          "add.*endpoint",
+          "implement.*route",
+          "fix.*bug",
+          "add.*validation"
+        ]
+      },
+      "fileTriggers": {
+        "pathPatterns": [
+          "**/*.py",
+          "src/**/*.py",
+          "tests/**/*.py"
+        ],
+        "contentPatterns": [
+          "from fastapi import",
+          "from flask import",
+          "@router\\.",
+          "@app\\.",
+          "def test_",
+          "class Test"
+        ]
+      }
+    }
+  }
+}
