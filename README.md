@@ -1,6 +1,6 @@
-# Simple Python AI Infrastructure Demo
+# Simple Claude Code - Python based Infrastructure Demo
 
-**A minimal, working example of AI-assisted development infrastructure for Python projects.**
+**A minimal, working example of Claude Code based AI-assisted development infrastructure for Python projects.**
 
 ---
 
